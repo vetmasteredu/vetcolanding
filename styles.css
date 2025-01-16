@@ -46,9 +46,10 @@ header .logo {
 /* Carousel */
 .carousel {
     position: relative;
-    max-width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
     overflow: hidden;
-    margin: 2rem 0;
+    height: 500px; /* Tamaño similar a VetcoEdu */
 }
 
 .carousel-container {
@@ -63,25 +64,32 @@ header .logo {
 
 /* Beneficios */
 .beneficios {
-    padding: 2rem;
+    padding: 3rem 1rem;
     background: #FFF2DC; /* Fondo naranja claro */
+    text-align: center;
 }
 
 .beneficios h2 {
+    font-size: 2rem;
+    color: #FF6700; /* Color naranja vibrante */
+    margin-bottom: 2rem;
+}
+
+.beneficio-item {
+    display: inline-block;
+    width: 250px;
+    margin: 1rem;
     text-align: center;
-    color: #FF6700; /* Color inspirado en el logo */
 }
 
-.beneficios ul {
-    list-style: none;
-    padding: 0;
-    max-width: 800px;
-    margin: 1rem auto;
+.beneficio-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
 }
 
-.beneficios li {
-    margin: 0.8rem 0;
-    font-size: 1rem;
+.beneficio-item p {
+    font-size: 1.1rem;
     color: #333;
 }
 
