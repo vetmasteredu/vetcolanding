@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const carouselContainer = document.querySelector('.carousel-container');
     const slides = document.querySelectorAll('.carousel-slide img');
-    const slideWidth = slides[0].clientWidth;
+    const slideWidth = carouselContainer.clientWidth;
     let currentIndex = 0;
 
     function startCarousel() {
