@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #00AEEF; /* Color principal del logo */
+    color: #fff;
+    padding: 1rem;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .logo {
+    height: 50px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background: #F7F7F7;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Carousel */
+.carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 2rem 0;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+/* Beneficios */
+.beneficios {
+    padding: 2rem;
+    background: #FFF2DC; /* Fondo naranja claro */
+}
+
+.beneficios h2 {
+    text-align: center;
+    color: #FF6700; /* Color inspirado en el logo */
+}
+
+.beneficios ul {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 1rem auto;
+}
+
+.beneficios li {
+    margin: 0.8rem 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Contacto */
+.contacto {
+    text-align: center;
+    padding: 2rem;
+    background: #00AEEF;
+    color: #fff;
+}
+
+.contact-button {
+    display: inline-block;
+    background: #25D366; /* Verde WhatsApp */
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-button:hover {
+    background: #20c857;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+}
