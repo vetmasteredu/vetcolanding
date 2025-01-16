@@ -1,13 +1,15 @@
-let currentIndex = 0;
+document.addEventListener('DOMContentLoaded', () => {
+    const carouselContainer = document.querySelector('.carousel-container');
+    const slides = document.querySelectorAll('.carousel-slide img');
+    const slideWidth = slides[0].clientWidth;
+    let currentIndex = 0;
 
-function startCarousel() {
-    const slides = document.querySelector('.carousel-container');
-    const totalSlides = slides.children.length;
+    function startCarousel() {
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            carouselContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        }, 7000); // 7 segundos
+    }
 
-    setInterval(() => {
-        currentIndex = (currentIndex + 1) % totalSlides;
-        slides.style.transform = `translateX(-${currentIndex * 100}%)`;
-    }, 7000); // Cambia cada 7 segundos
-}
-
-document.addEventListener('DOMContentLoaded', startCarousel);
+    startCarousel();
+});
